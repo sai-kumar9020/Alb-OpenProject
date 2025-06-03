@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.10.0"
 
   backend "s3" {
-    bucket       = "hcltrainings"
+    bucket       = "hcltechtrainings"
     key          = "vpcec2/terraform.tfstatefocalboard"
     region       = "us-east-1"
   }
