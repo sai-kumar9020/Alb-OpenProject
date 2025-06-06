@@ -3,7 +3,9 @@ terraform {
 
   backend "s3" {
     bucket       = "hcltrainings"
-    key          = "vpcec2/terraform.tfstatefocalboard"
+    key          = "vpcec2/terraform.tfstate"
     region       = "us-east-1"
+    use_lockfile = true
+    encrypt      = true
   }
 }
